@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html ng-app="my">
+<head>
+  <title>ib</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+  <link rel="shortcut icon" href="css/ib.ico" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container" ng-controller="Controller">
+ <div id="main" class="row">
+  <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+ 
+  <!-- header -->
+  <div id="header" class="row">
+    <div id="greeting" class="col-xs-12">
+      <h1>Hello there,</h1>
+      <!--<img src="img/etc/hellothere2.png" class="img-responsive">-->
+    </div>
+    <hr>links
+  </div>
+
+  <!-- links -->
+  <div id="links" class="row">
+    <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 link-wrap">
+      <div class="row">
+        <div ng-repeat="block in blocks" class="col-xs-3 link-image" ><a href="{{ block.href }}" title="{{ block.name }} page" target="_blank">
+          <img ng-src="img/apps/{{ block.imgSrc }}" class="img-responsive"></a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="folder-top" title="{{ folderTitle }}" class="folder-wrap">
+       <div class="folder">
+         <img ng-src="{{ folderImg }}" ng-click="togglePortfolioDetails()" class="folder-img">
+        </div>
+    </div>
+    
+  </div>
+   
+   <!-- details -->
+  <div id="details" ng-if="portfolioDetails" class="row portfolio-fold">
+     
+     <div id="details-wrap" class="col-xs-12">
+     <span class="spanLabel">details</span>
+      <div ng-repeat="block in blocks" class="wrapper-block" data-id="{{ $index }}">
+       <div class="row block">
+       
+       <!-- right side -->
+        <div class="col-xs-7 col-xs-offset-5 col-sm-6 col-sm-offset-0 col-sm-push-6 col-lg-7 col-lg-push-5 block-right tpad">
+          <div class="row">
+            <div ng-if="block.mobilePhoto" class="col-xs-3 photo-wrap">
+              <img ng-src="img/etc/{{ mobileFrameSrc }}" class="mobile-frame">
+              <img ng-src="img/apps/{{ block.mobilePhoto }}" class="mobile-photo">   
+            </div>
+            <div ng-if="block.desktopPhoto" class="col-xs-9 photo-wrap">
+              <img ng-src="img/etc/{{ desktopFrameSrc }}" class="desktop-frame">
+              <img ng-src="img/apps/{{ block.desktopPhoto }}" class="desktop-photo">   
+            </div>
+          </div>
+        </div>
+       
+        <!-- left side -->
+        <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-lg-5 col-lg-pull-7 block-left">
+          <div class="row">
+            <div class="col-xs-3 block-image">
+                <img ng-src="img/apps/{{ block.imgSrc }}" class="img-responsive">
+            </div>
+            <div class="col-xs-9 block-title">
+                <h2>{{ block.name }}</h2>
+            </div>
+          </div>
+          <div class="row tpad">
+            <div class="col-xs-12 block-info">
+                <p class="block-info-text">{{ block.info }}</p>
+                <p class="block-info-langs">[{{ block.infoLangs }}]</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- links -->
+        <div class="block-links">
+            <div class="block-link">
+               <a href="{{ block.href }}" title="{{ block.name }} website" class="btn button" style="background-color: {{ block.color }};" target="_blank">
+              </a> 
+            </div>
+            <div class="block-link">
+              <a href="{{ block.href }}" title="{{ block.name }} on GitHub" class="btn btn-default git-btn" target="_blank">
+                <img src="img/etc/github.png">
+              </a>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+    </div>
+    <div id="folder-bottom" title="{{ folderTitle }}" class="folder-wrap">
+       <div class="folder">
+         <img ng-src="{{ folderBottomImg }}" ng-click="togglePortfolioDetails()" class="folder-img">
+        </div>
+      </div>
+  </div>
+    
+    <!-- footer -->
+    <div id="footer" class="row">
+      <div id="footer-title" class="col-xs-5">
+        <h3>ievgen borodin</h3>
+      </div>
+      <div id="footer-my-links" class="col-xs-7">
+        <ul>
+            <li ng-repeat="l in myLinks">
+                <a title="{{ l.title }}" href="{{ l.href }}">
+                    <img class="img-responsive" ng-src="img/contact/{{ l.imgSrc }}">
+                </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>      
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/angular-animate.min.js"></script>
+  <script>
+    'use strict';
+
+    angular.module('my', [
+        'ngAnimate',
+        'my.portfolio.controller'
+    ]);
+  </script>
+  <script src="js/controllers.js"></script>
+</body>
+</html>
