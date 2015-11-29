@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+  <meta property="og:site_name" content="Ievgen Borodin - portfolio site" />
+  <meta property="og:locale" content="en_US" /> 
+  <meta name="description" content="Portfolio site. Work samples." />
+  <meta name="title" content="Ievgen Borodin" />
+  <title>PortfolioHeroku</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

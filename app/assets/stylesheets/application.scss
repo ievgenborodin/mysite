@@ -1,0 +1,238 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@font-face {
+  font-family: 'Cent';
+  src: url('/assets/Cent.eot');
+  src: url('/assets/Cent.eot?iefix') format('eot'),
+       url('/assets/Cent.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Cent-ital';
+  src: url('/assets/Cent-ital.eot');
+  src: url('/assets/Cent-ital.eot?iefix') format('eot'),
+       url('/assets/Cent-ital.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/assets/GothamHTF.eot');
+  src: url('/assets/GothamHTF.eot?iefix') format('eot'),
+       url('/assets/GothamHTF.ttf') format('truetype');    
+}
+body, html{
+    background: #fff;
+}    
+.clr{
+    clear: both;
+}
+.hid{
+    display: none;
+}
+.name{
+    margin-top: 0.2em;
+    color: #eee;
+    background: #333; 
+    border-radius: 4px;
+}
+.name h3{
+    padding: 0 2em;
+    font-family: 'Gotham', sans-serif;
+    text-transform: uppercase;
+}
+.tiny{
+    font-size: 0.5em;
+    color: bisque;
+}
+.col-block{
+    margin-top:1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: #333;
+    background: #eee;
+    border-radius: 4px;
+    font-family: 'Gotham', sans-serif;
+    position: relative;
+}
+.slidy-btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.parts-block{
+    margin-top:1em;
+    padding-bottom: 0;
+    margin-bottom: -1em;
+    color: #333;
+    border-radius: 4px;
+    font-family: 'Gotham', sans-serif;
+}
+.h3-parts{
+    font-family: 'Cent';
+    text-align: center;
+    margin-top: 0;
+    padding: 0.3em;
+    background-color: #99ccff;
+    color: #333;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+        
+p{
+    font-family: 'Cent', sans-serif;
+}
+.button{
+    font-family: 'Gotham', sans-serif;
+    font-size: 0.4em;
+    font-weight: bold;
+    padding: 0.3em 0.6em;
+    text-transform: uppercase;
+    color: white !important;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;  
+}
+.button:hover{
+    text-decoration: none;
+}
+.bandshell-btn{
+    background: #0101ff;
+}
+.raccoon-btn{
+    background: green;
+}
+.brush-btn{
+    background: lightgreen;
+}
+.tri-btn{
+    background: #299e56;
+}
+.backgrid-btn{
+    background: #db9d4f;
+}
+.backgrid-img{
+    border: 1px solid #584c2b;
+}
+.func-btn{
+    background: red;
+}
+.monk-btn{
+    background: orange;
+}
+.gems-btn{
+    background: orange;
+}
+.colors-h2{
+    font-size: 27px;
+}
+.colors-btn{
+    background: #ac22cc;
+    display: inline-block;
+    width: 5em;
+}
+.ccv-btn{
+    background: rgb(23, 223, 23);
+    cursor: pointer;
+}
+.brad{
+    border-radius: 10px;
+}
+.smnav{
+    border: none;
+    margin-bottom: 0;
+    background-color: white;
+}
+.main-container{
+    margin-top: 2em;
+}
+.smh4{
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+.langs{
+    color: red;
+    font-size: 0.62em;
+}
+
+#main-container{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media(min-width: 180px){ 
+    .slidy-btn{
+        width: 30px;
+        height: 30px;
+    }
+    .tpad{
+        margin-top: 2em;
+    }
+    .slidy{
+        display: none;
+    }
+}
+
+@media(min-width: 580px){ 
+    .tpad{
+        margin-top: 0.5em;
+    }   
+    .slidy-btn{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media(min-width: 768px){ 
+    .slidy-btn{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media(min-width: 992px){ 
+    .tpad{
+        margin-top: 0em;
+    }   
+}
+
+@media(min-width: 1200px){
+    .slidy{
+        display: block;
+    }
+    .slidy-btn{
+        display: none;
+    }
+    .name{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .lbor{
+        border-left-color: #999;
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .hr-bor{
+        border-top-color: #999;
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        width: 90%;
+        margin: auto;
+    }
+    .col-block{
+        padding-bottom: 3em;
+    }
+    .row-block{
+        margin-top:1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        color: #333;
+        background: #eee;
+        border-radius: 4px;
+        font-family: 'Gotham', sans-serif;
+        position: relative;
+    }
+}

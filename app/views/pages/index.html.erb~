@@ -1,0 +1,97 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 name">
+            <h3>ievgen borodin<span class="tiny"> [portfolio]</span></h3>
+        </div>
+    </div>
+ 
+     <!--  BANDSHELL   -->
+            <div class="row row-block">
+                <div class="col-xs-3">
+                    <%= image_tag "bandshell.jpg", class: "img-responsive brad" %>
+                </div>
+                <div class="col-xs-9">
+                    <h2>Bandshell Booking <%= link_to '&raquo; link'.html_safe, "http://bandshell.herokuapp.com/", class: "button bandshell-btn", target: "_blank" %></h2>
+                    <p class="lead bandshell-p">A show booking and promotions agency startup site with responsive design. <span class="langs">[ruby on rails, html, javascript]</span></p>
+                </div>
+            </div>
+        <!--  RACCOON   -->
+            <div class="row row-block">
+                <div class="col-xs-3">
+                    <%= image_tag "raccoon.png", class: "img-responsive brad" %>
+                </div>
+                <div class="col-xs-9">
+                    <h2>Raccoon <%= link_to '&raquo; link'.html_safe, "http://feverart.com/", class: "button raccoon-btn", target: "_blank" %></h2>
+                    <p class="lead">2d browser-oriented arcade game with responsive design. <span class="langs">[html-canvas, javascript]</span></p>
+                </div>
+            </div>
+             <!--  GEMS   -->
+            <div class="row row-block">
+                <div class="col-xs-3">
+                    <%= image_tag "gems.jpg", class: "img-responsive brad" %>
+                </div>
+                <div class="col-xs-9">
+                    <h2 class="gems-font">Gems <%= link_to '&raquo; link'.html_safe, "http://feverart.com/gems", class: "button gems-btn", target: "_blank" %></h2>
+                    <p class="lead gems-p">Out of curiosity. Implementation of matrix for Diamonds. Supports touch events and mouse.<span class="langs">[html-canvas, javascript]</span></p>
+                </div>
+            </div> 
+            <div class="row parts-block">
+                <h3 class="h3-parts">parts</h3>
+                <div class="col-xs-12">
+                    
+                    <!--  Brush   -->
+                    <div class="row row-block">
+                <div class="col-xs-3">
+                    <%= image_tag "brush.jpg", class: "img-responsive brad" %>
+                </div>
+                <div class="col-xs-9">
+                    <h2 class="gems-font">My Brush <%= link_to '&raquo; link'.html_safe, "http://mybrush.herokuapp.com/", class: "button brush-btn", target: "_blank" %></h2>
+                    <p class="lead gems-p">Browser oriented drawing app. Supports mouse and touch events <span class="langs">[html-canvas, javascript]</span></p>
+                </div>
+            </div> 
+                    
+                    <!--  MONK   -->
+                    <div class="row row-block">
+                <div class="col-xs-3">
+                    <%= image_tag "monk-cover.jpg", class: "img-responsive brad" %>
+                </div>
+                <div class="col-xs-9">
+                    <h2 class="gems-font">Monk <%= link_to '&raquo; link'.html_safe, "http://feverart.com/monk", class: "button monk-btn", target: "_blank" %></h2>
+                    <p class="lead gems-p">Base for 2d with side view arcade game. Supports keyboard and touches.<span class="langs">[html-canvas, javascript]</span></p>
+                </div>
+            </div>     
+                    <!--  Tri   -->
+                    <div class="row row-block">
+                <div class="col-xs-3">
+                    <%= image_tag "tri.jpg", class: "img-responsive brad" %>
+                </div>
+                <div class="col-xs-9">
+                    <h2 class="gems-font">Tri <%= link_to '&raquo; link'.html_safe, "http://feverart.com/tri", class: "button bandshell-btn", target: "_blank" %></h2>
+                    <p class="lead gems-p">Experimental 3d with png. Searches from four sides for a specific color to mark a border and then builds z depth. Supports only mouse <span class="langs">[html-canvas, javascript]</span></p>
+                </div>
+            </div>  
+                    
+                <!--  Functions   -->
+                    <div class="row row-block">
+                <div class="col-xs-3">
+                    <%= image_tag "functions.jpg", class: "img-responsive brad" %>
+                </div>
+                <div class="col-xs-9">
+                    <h2 class="gems-font">Functions <%= link_to '&raquo; link'.html_safe, "http://feverart.com/functions", class: "button func-btn", target: "_blank" %></h2>
+                    <p class="lead gems-p">Functions and their graphs </p>
+                </div>
+            </div>    
+                    
+                <!--  Lines   -->
+                    <div class="row row-block">
+                <div class="col-xs-3">
+                    <%= image_tag "lines.jpg", class: "img-responsive brad" %>
+                </div>
+                <div class="col-xs-9">
+                    <h2 class="gems-font">Lines <%= link_to '&raquo; link'.html_safe, "http://feverart.com/lines", class: "button bandshell-btn", target: "_blank" %></h2>
+                    <p class="lead gems-p">Not finished yet. </p>
+                </div>
+            </div>      
+                </div>
+            </div>
+</div>
