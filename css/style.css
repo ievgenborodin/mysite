@@ -1,18 +1,14 @@
 @font-face {
   font-family: 'Cent';
-  src: url('../../css/fonts/Cent.eot');
-  src: url('../../css/fonts/Cent.eot?iefix') format('eot'),
-       url('../../css/fonts/Cent.ttf') format('truetype');
+  src: url('fonts/Cent.eot');
+  src: url('fonts/Cent.eot?iefix') format('eot'),
+       url('fonts/Cent.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Gotham';
-  src: url('../../css/fonts/GothamHTF.otf');
-  src: url('../../css/fonts/GothamHTF.eot?iefix') format('eot'),
-       url('../../css/fonts/GothamHTF.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Novecento';
-  src: url('../../css/fonts/Novecentosanswide-Normal.otf');
+  src: url('fonts/GothamHTF.otf');
+  src: url('fonts/GothamHTF.eot?iefix') format('eot'),
+       url('fonts/GothamHTF.ttf') format('truetype');
 }
 
 body, html{
@@ -75,6 +71,12 @@ body, html{
 .block-info-text{
     font-family: 'Cent';
     color: #676767;
+}
+.more-info-span{
+    display: block;
+    margin-top: 0.5em;
+    font-size: 0.8em;
+    color: #046608;
 }
 .block-info-langs{
     color: red;

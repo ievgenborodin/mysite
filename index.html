@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="my">
 <head>
-  <title>ib</title>
+  <title>ib - portfolio</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
   <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
   <link rel="shortcut icon" href="css/ib.ico" />
@@ -74,7 +74,7 @@
           </div>
           <div class="row tpad">
             <div class="col-xs-12 block-info">
-                <p class="block-info-text">{{ block.info }}</p>
+                <p class="block-info-text">{{ block.info }}<span class="more-info-span" ng-if="block.infoSpan">{{ block.infoSpan }}</span></p>
                 <p class="block-info-langs">[{{ block.infoLangs }}]</p>
             </div>
           </div>
@@ -87,7 +87,7 @@
               </a> 
             </div>
             <div class="block-link">
-              <a href="{{ block.href }}" title="{{ block.name }} on GitHub" class="btn btn-default git-btn" target="_blank">
+              <a href="{{ block.gitLink }}" title="{{ block.name }} on GitHub" class="btn btn-default git-btn" target="_blank">
                 <img src="img/etc/github.png">
               </a>
             </div>
