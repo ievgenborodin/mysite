@@ -40,6 +40,50 @@ angular.module('my.portfolio.controller', [])
          mobilePhoto: 'bandshell/2.gif',  
          desktopPhoto: 'bandshell/1.jpg'
       },
+			{
+         name: 'BackGrid',
+         imgSrc: 'backgrid.jpg',
+         info: 'Scalable background pattern tool. Helps to draw a grid / tile images.',
+         infoLangs: 'javascript, php',
+         href: 'apps/backgrid',
+         gitLink: 'https://github.com/ievgenborodin/backgrid',
+         color: "#5e2400",
+         mobilePhoto: 'grid/2.gif',
+         desktopPhoto: 'grid/1.jpg'
+      },
+      {
+         name: 'Lines',
+         imgSrc: 'lines.jpg',
+         info: 'Web application. Structured as a mini platform for implementation and testing geometric animation.',
+         infoLangs: 'html5-canvas, javascript, jquery, requirejs',
+         href: 'apps/lines',
+         gitLink: 'https://github.com/ievgenborodin/lines',
+         color: "#211b80",
+         mobilePhoto: 'lines/2.gif',
+         desktopPhoto: 'lines/1.jpg'
+      },
+        {
+         name: 'Tri',
+         imgSrc: 'tri.jpg',
+         info: 'Image depth generator. Searches through the image for outlines, based on found colors builds depth. Use sample images or load your pictures. Supports mouse and touch events.',
+         infoLangs: 'html5-canvas, javascript, php',
+         href: 'apps/tri',
+         gitLink: 'https://github.com/ievgenborodin/tri',
+         color: "#299e56",
+         mobilePhoto: 'tri/2.gif',
+         desktopPhoto: 'tri/1.jpg'
+      },
+		{
+         name: 'Color Picker',
+         imgSrc: 'color.jpg',
+         info: 'Select color using hue bar and saturation-value field or by entering hash code. Bottom block gives ten random colors. Supports mouse and touch events.',
+         infoLangs: 'javascript',
+         href: 'apps/colorpicker',
+         gitLink: 'https://github.com/ievgenborodin/color-picker',
+         color: "#ac22cc",
+         mobilePhoto: 'picker/2.gif',
+         desktopPhoto: 'picker/1.jpg'
+      },
       {
          name: 'Raccoon',
          imgSrc: 'raccoon.jpg',
@@ -61,62 +105,7 @@ angular.module('my.portfolio.controller', [])
          color: "#ff6a00",
          mobilePhoto: 'gems/2.jpg',
          desktopPhoto: 'gems/1.jpg'
-      },
-      {
-         name: 'Live Brush',
-         imgSrc: 'brush.jpg',
-         info: 'Browser oriented hybrid graphical app. Combines raster and object based drawing. Supports mouse and touch events.',
-         infoLangs: 'html5-canvas, javascript, php',
-         href: 'apps/livebrush',
-         gitLink: 'https://github.com/ievgenborodin/live-brush',
-         color: "#098e60",
-         mobilePhoto: 'brush/2.gif',
-         desktopPhoto: 'brush/1.jpg'
-      },
-      {
-         name: 'Color Picker',
-         imgSrc: 'color.jpg',
-         info: 'Select color using hue bar and saturation-value field or by entering hash code. Bottom block gives ten random colors. Supports mouse and touch events.',
-         infoLangs: 'javascript',
-         href: 'apps/colorpicker',
-         gitLink: 'https://github.com/ievgenborodin/color-picker',
-         color: "#ac22cc",
-         mobilePhoto: 'picker/2.gif',
-         desktopPhoto: 'picker/1.jpg'
-      },
-      {
-         name: 'Tri',
-         imgSrc: 'tri.jpg',
-         info: 'Image depth generator. Searches through the image for outlines, based on found colors builds depth. Use sample images or load your pictures. Supports mouse and touch events.',
-         infoLangs: 'html5-canvas, javascript, php',
-         href: 'apps/tri',
-         gitLink: 'https://github.com/ievgenborodin/tri',
-         color: "#299e56",
-         mobilePhoto: 'tri/2.gif',
-         desktopPhoto: 'tri/1.jpg'
-      },
-      {
-         name: 'BackGrid',
-         imgSrc: 'backgrid.jpg',
-         info: 'Scalable background pattern tool. Helps to draw a grid / tile images.',
-         infoLangs: 'javascript, php',
-         href: 'apps/backgrid',
-         gitLink: 'https://github.com/ievgenborodin/backgrid',
-         color: "#5e2400",
-         mobilePhoto: 'grid/2.gif',
-         desktopPhoto: 'grid/1.jpg'
-      },
-      {
-         name: 'Lines',
-         imgSrc: 'lines.jpg',
-         info: 'Web application. Structured as a mini platform for implementation and testing geometric animation.',
-         infoLangs: 'html5-canvas, javascript, jquery, requirejs',
-         href: 'apps/lines',
-         gitLink: 'https://github.com/ievgenborodin/lines',
-         color: "#211b80",
-         mobilePhoto: 'lines/2.gif',
-         desktopPhoto: 'lines/1.jpg'
-      },    
+      },  
       {
          name: 'Dro',
          imgSrc: 'dro.jpg',
@@ -128,6 +117,17 @@ angular.module('my.portfolio.controller', [])
          mobilePhoto: 'dro/2.gif',
          desktopPhoto: 'dro/1.jpg'
       },
+      {
+         name: 'Live Brush',
+         imgSrc: 'brush.jpg',
+         info: 'Browser oriented hybrid graphical app. Combines raster and object based drawing. Supports mouse and touch events.',
+         infoLangs: 'html5-canvas, javascript, php',
+         href: 'apps/livebrush',
+         gitLink: 'https://github.com/ievgenborodin/live-brush',
+         color: "#098e60",
+         mobilePhoto: 'brush/2.gif',
+         desktopPhoto: 'brush/1.jpg'
+      },    
       {
          name: 'Monk',
          imgSrc: 'monk-cover.jpg',
