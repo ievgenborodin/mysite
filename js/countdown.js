@@ -95,7 +95,7 @@ var Countdown = function(cfg){
   };
   
   function setPartSize(){
-    var size = getDigitSize();    
+    var size = getDigitSize();  
     horWidth = size.width;
     horHeight = size.height * 0.1;
     vertWidth = size.height * 0.5;  
