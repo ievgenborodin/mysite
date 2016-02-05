@@ -1,0 +1,126 @@
+#darkness{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #aaa;
+    opacity: 0.5;
+    z-index: 9;
+}
+#picker-wrap{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 2em;
+    z-index: 10;
+}
+
+#picker{
+    position: relative;
+    width: 257px;
+    border: 4px solid #333;
+    border-radius: 4px;
+    background: #333;
+    margin: 1em auto;
+    z-index: 100;
+    height: 309px;
+}
+
+#picker-sv-wrap{
+    height: 256px;
+    float: left;
+    position: relative;
+}
+#picker-sv{
+    height: 256px;
+    width: 224px;
+    background-color: #ff0000;
+}
+#picker-sv-pointer{
+    margin-top: -4px;
+    margin-left: -4px;
+    position: absolute;
+    top: 0px;
+    left: 255px;
+    width: 8px;
+    height: 8px;
+    border-color: white;
+    border-width: 2px; 
+    border-style: solid;
+    border-radius: 4px;
+}
+
+#picker-h-wrap{
+    position: relative;
+    float: right;
+}
+#picker-h{
+    height: 256px;
+}
+#picker-h-pointer{
+    margin-top: -1px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    border-color: #eee;
+    border-width: 2px; 
+    border-style: solid;
+}
+
+#picker-controls-wrap{
+    position: relative;
+    clear:both;
+    width:100%;
+    height: 48px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+#picker-controls-wrap > div{
+    float: left;
+}
+#picker-ok{
+    margin-right: 6px;
+    margin-left: 2px;
+    background: #eee;
+    min-width: 60px;
+    height: 100%;
+}
+#picker-ok:hover{
+    background: lightblue;
+}
+#picker-preview{
+    height: 100%;
+    width: 65px;
+    margin-right: 6px;
+    background: red;
+    border:1px solid #ccc;
+    display: block;
+} 
+#picker-hash-wrap{
+    position: relative;
+    width: 108px;
+    margin-right: 2px;
+    height: 100%;
+    font-size: 1.2em;
+    color: #fff;
+}
+#picker-hash{
+    vertical-align: middle;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 3px;
+    color: #222;
+    min-width: 85px;
+    margin-left: 3px;
+    margin-right: 3px;
+    height: 100%;
+    text-align: center;
+}
+#picker-hash:hover, 
+#picker-h:hover, #picker-sv:hover{
+    cursor: pointer;
+}

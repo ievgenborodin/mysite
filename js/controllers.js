@@ -150,6 +150,25 @@ angular.module('my.portfolio.controller', [])
       }*/
     ];
     
+    /* modules block data */    
+    $scope.modules = [
+      {
+        title: "Countdown",
+        info: "",
+        imgSrc: ""
+      },
+      {
+        title: "Color Picker",
+        info: "",
+        imgSrc: ""
+      },
+      {
+        title: "Input",
+        info: "",
+        imgSrc: ""
+      }
+    ];
+  
     /* footer my contacts */
     $scope.myLinks = [
       {

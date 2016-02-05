@@ -14,7 +14,7 @@
 body, html{
   background-color: #ffffff;
 }
-#header{
+#header, #modules{
   opacity: 0.8;
   font-family: 'Cent';
   color: #070f59;
@@ -25,6 +25,149 @@ body, html{
   border-color: #070f59;
 }
 
+#modules{
+  margin: 1em;
+}
+.clr{
+  clear: both;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.module{
+  margin-top: 1em;
+  overflow: hidden;
+}
+.module-preview{
+  border-radius: 3px;
+  position: relative;
+  background-color: #f5f5f5;
+  padding-top: 1em;
+}
+.module-preview-span{
+  position: absolute;
+  font-family: sans-serif;
+  font-size: .8em;
+  color: #909090;
+  right: 7px;
+  top: 5px;
+}
+.module-setup{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#module-setup-countdown-input{
+  
+}
+#module-setup-countdown-btn{
+  padding: 3px 12px;
+  background-color: #707070;
+  color: #f0f0f0;
+}
+#module-setup-countdown-btn:hover{
+  background-color: #606060;
+}
+#countdown{
+  min-height: 110px;
+}
+
+/*--- custom input sample elements ---*/
+#module-custominput-sampleelements{
+  position: relative;
+  height: 250px;
+}
+.abs{
+  position: absolute;
+}
+.abs-col-1{
+  left: 30%;
+  top: 50px;
+}
+.abs-col-2{
+  left: 60%;
+  top: 100px;
+}
+.abs-col-3{
+  left: 10%;
+  top: 150px;
+}
+.cols{
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #d0d0d0;
+}
+/* --------------------------*/
+/* color picker sample element */
+#module-colorpicker-preview{
+  min-height: 135px;
+}
+#someElement{
+  height: 50px;
+  width: 50px;
+  margin: 10px auto;
+  border: 1px solid #707070;
+  border-radius: 3px;
+  background-color: #123456;
+}
+h3{
+  text-align: center;
+}
+#message{
+  font-family: sans-serif;
+  color: #909090;
+}
+#span-color{
+  font-size: .8em;
+  text-transform: uppercase;
+  color: #707070;
+}
+
+/* -------------------------*/
+.module-separator{
+  clear: both;
+  width: 60%;
+  margin-bottom: 3em;
+  margin-top: 38px;
+}
+.module-info{
+  min-height: 150px;
+  position: relative;
+}
+.module-title{
+  font-family: 'Gotham';
+  font-style: normal;
+  opacity: .7;
+  font-size: 2em;
+}
+
+.module-description{
+  text-align: left;
+  font-family: sans-serif;
+  color: #898989;
+  font-size: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+.module-link{
+  position: relative;
+  width: 30%;
+  margin:auto;
+  margin-bottom: .5em;
+  font-family: sans-serif;
+  color: #676767;
+}
+.module-link a{
+  display: block;
+}
+.module-link a,
+.module-link a:visited{
+  color: #ffffff;
+}
+.module-link img {
+  width: 2em;
+  height: 2em;
+}
 .spanLabel{
   display: block;
   opacity: 0.8;
@@ -93,6 +236,16 @@ body, html{
     display: block;
     margin: auto;
 }
+.block-link a,
+.block-link a:visited{
+    color: #ffffff;
+}
+.git-btn,
+.git-btn:visited,
+.module-git-btn,
+.module-git-btn:visited{
+    color: #000000 !important;
+}
 
 .button{
     color: #eee;
@@ -113,6 +266,7 @@ body, html{
 
 #footer{
   background-color: #777;
+  border-top:  3px solid #909090;
 }
 #footer-title h3{
   text-align: right;
@@ -313,7 +467,7 @@ body, html{
     .button:before{
         content: "link";
     }
-    .git-btn{
+    .git-btn, .module-git-btn{
         padding: .5em .5em;
         font-size: 0.9em;
         height: auto;
@@ -626,8 +780,13 @@ body, html{
         padding-left: 0;
         margin-left: 15px;
     }
+  
+  .module-info{
+    padding-left: 40px;
+    padding-right: 0;
+  }
     #footer{
-        margin-top: 7em;
+        margin-top: 4em;
     }
     #footer-my-links a{
       width: 15%;
@@ -646,6 +805,9 @@ body, html{
     }
     .link-image{
       width: 20%;
+    }
+    .block-info-text{
+        min-height: 180px;
     }
 }
 

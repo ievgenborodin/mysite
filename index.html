@@ -4,9 +4,12 @@
   <title>ib - portfolio</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
   <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
-  <link rel="shortcut icon" href="css/ib.ico" />
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="css/ib.ico">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/countdown.css" rel="stylesheet">
+  <link href="css/input.css" rel="stylesheet">
+  <link href="css/picker.css" rel="stylesheet">
 </head>
 <body>
 <div class="container" ng-controller="Controller">
@@ -102,6 +105,108 @@
         </div>
       </div>
   </div>
+   
+    
+  <!-- modules -->
+  <div id="modules" class="row">
+    <hr>modules
+    
+    <!-- .......... countdown ............ -->
+    <div class="module">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 module-preview">
+        <div class="row">
+          <div id="countdown"></div>
+        </div>
+        <div class="row">
+          <div class="module-setup">
+          <input type="text" size="9" id="module-setup-countdown-input" title="seconds">
+          <span id="module-setup-countdown-btn" class="btn">set</span>        
+        </div>
+        </div>
+        <span class="module-preview-span">preview</span>
+      </div>
+      
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 module-info">
+        <h2 class="module-title">Countdown</h2>
+        
+        <div class="module-description">
+          Timer module. Made with css animations (doesn't require jquery)
+        </div>
+        
+        <div class="module-link">  
+          <a href="https://github.com/ievgenborodin/countdown-module" title="Countdown on GitHub" class="btn btn-default module-git-btn" target="_blank">
+            sources
+            <img src="img/etc/github.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- module separator -->
+    <hr class="module-separator">
+    
+    <!--   ........  custom input .......   -->
+    <div class="module">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 module-preview">
+        <div id="module-custominput-sampleelements" class="row">
+          <div class="cols abs abs-col-1"></div>
+          <div class="cols abs abs-col-2"></div>
+          <div class="cols abs abs-col-3"></div>        
+        </div>
+        <span class="module-preview-span">preview</span>
+      </div>
+      
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 module-info">
+        <h2 class="module-title">Custom Input</h2>
+        <div class="module-description">
+          Easy to use custom input module for web applications. Uses jquery.
+        </div>
+        
+        <div class="module-link">  
+          <a href="https://github.com/ievgenborodin/input-module" title="Custom Input on GitHub" class="btn btn-default module-git-btn" target="_blank">
+            sources 
+            <img src="img/etc/github.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- module separator -->
+    <hr class="module-separator">
+    
+    <!--  ......... color picker ........  -->
+    <div class="module">
+      <div id="module-colorpicker-preview" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 module-preview">
+        <div class="row">
+          <h4>
+            <span id="message">
+              click on the square below.
+            </span>
+            <span id="span-color"></span>
+          </h4>
+          <div id="someElement"></div>        
+        </div>
+        <span class="module-preview-span">preview</span>
+      </div>
+      
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 module-info">
+        <h2 class="module-title">Color Picker</h2>
+        <div class="module-description">
+          Uses jquery. For instructions and sources goto link below.
+        </div>
+        
+        <div class="module-link">  
+          <a href="https://github.com/ievgenborodin/color-picker-module" title="Color Picker on GitHub" class="btn btn-default module-git-btn" target="_blank">
+            sources 
+            <img src="img/etc/github.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>    
+    
     
     <!-- footer -->
     <div id="footer" class="row">
@@ -120,7 +225,20 @@
     </div>
   </div>
  </div>
-</div>      
+</div>
+
+<!-- custom input module html -->
+<div id="custominput">
+  <div id="input-wrap">
+    <div id="input">
+      <div title="Done" id="input-done">&#10003;</div>
+      <div class="brow" id="input-buttons">
+        <div title="Backspace" id="input-backspace">&larr;</div>
+      </div>
+    </div>
+  </div>
+</div> 
+             
   <script src="lib/angular.min.js"></script>
   <script src="lib/angular-animate.min.js"></script>
   <script>
@@ -132,5 +250,56 @@
     ]);
   </script>
   <script src="js/controllers.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/picker.js"></script>
+  <script>      
+  
+  /* color picker init */
+  var picker = new Picker();
+    
+  $('#someElement').on('click',function(e){
+    picker.init($(this), cb);
+  });    
+    
+  function cb(color){
+    $('#message').text("hex ");
+    $('#span-color')
+      .text('#' + color)
+      .css('color', '#' + color);
+  };
+    
+  /* custom input module init */
+  var input = new Input({
+    keys: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 
+           'a', 'b', 'c', 'd', 'e', 'f']
+  });    
+  
+  $('.cols').on('click',function(e){
+    input.start($(this));
+  }); 
+  
+    
+  /* countdown module init */  
+  var countdown = new Countdown({
+    wrapId: 'countdown',
+    seconds: 71,
+    callback: callback
+  });
+  
+  function callback(){
+    console.log("done");
+  };
+    
+  
+  var secondsInput = document.getElementById('module-setup-countdown-input'),
+  secondsButton = document.getElementById('module-setup-countdown-btn').addEventListener('click', function(){
+    secondsInput.value = parseInt(secondsInput.value);
+    if (!isNaN(secondsInput.value))
+      countdown.reset(secondsInput.value);
+  });  
+
+</script>    
 </body>
 </html>
